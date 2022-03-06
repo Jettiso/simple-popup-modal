@@ -1,9 +1,10 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     display: grid;
@@ -11,11 +12,9 @@ body {
     position: relative;
 }
 
-
 a {
     text-decoration: none;
 }
-
 
 #modalBtn {
     border-radius: 10px;
@@ -35,6 +34,8 @@ a {
     padding: 1rem;
     border-radius: 15px;
     background-color: blueviolet;
+    visibility: hidden;
+    transition: ease 2s;
 }
 
 .modal h1 {
@@ -43,4 +44,12 @@ a {
 
 .modal a {
     color: #f2f2f2;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hide;
 }
